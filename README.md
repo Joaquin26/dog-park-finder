@@ -1,27 +1,20 @@
-# DogParkFinder
+# Dog Park Finder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Es una pequeña aplicación para encontrar parques para perros cercanos.
 
-## Development server
+## Servicios externos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Pipican - Dog Park and Dog Beach Locator API](https://rapidapi.com/jtejedera/api/pipican-dog-park-and-dog-beach-locator-api/)
+- Google Map
 
-## Code scaffolding
+## Configuración
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Se debe ingresar la key para el servicio de Pipican en los archivos de environment
+- Se debe ingresar la key para el servicio de google maps en el index.html
 
-## Build
+## Roadmap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- ~~Obtener los parques para perros cercanos a una ubicación~~
+- ~~Agregar característica para registrar un nuevo parque para perros al seleccionar una ubicación vacia~~
+- ~~Agregar característica para eliminar un parque para perros~~
+- ~~Agregar característica para editar el nombre de un parque para perros~~
