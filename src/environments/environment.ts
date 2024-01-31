@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  pepicanApi: {
+    url: 'https://pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com',
+    host: 'pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com',
+    key: 'Enter your RapidAPI key here',
+    nearbyBasic: '/nearby-basic',
+  },
 };
 
 /*

@@ -1,0 +1,20 @@
+<div class="flex h-screen flex-col md:flex-row">
+  <div class="">
+    <app-dog-park-list
+      [parks]="parks"
+      [parkSelectedId]="parkSelected"
+      (parkSelected)="selectPark($event)"
+      (parkDeleted)="deletePark($event)"
+      (parkEdited)="editPark($event)"
+    ></app-dog-park-list>
+  </div>
+  <div class="flex-1">
+    <app-map-view
+      [parks]="parks"
+      [parkSelected]="parkSelected"
+      (parkSelectedChange)="selectPark($event)"
+      (centerChange)="getNearbyParks($event)"
+      (registerParkChange)="registerPark($event)"
+    ></app-map-view>
+  </div>
+</div>

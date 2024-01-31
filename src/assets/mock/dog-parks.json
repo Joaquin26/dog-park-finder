@@ -1,0 +1,97 @@
+{
+  "error": false,
+  "message": "Get pipican successful",
+  "result": [
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3739305, 2.0936649000000003]
+      },
+      "_id": "6226318c1dd149a77c27be27",
+      "properties": {
+        "@id": "way/549234708",
+        "leisure": "dog_park"
+      },
+      "type": "Feature",
+      "feature_id": "way/549234708",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    },
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3787371, 2.0883225999999997]
+      },
+      "_id": "6226318f1dd149a77c27c183",
+      "properties": {
+        "@id": "way/871997657",
+        "leisure": "dog_park"
+      },
+      "type": "Feature",
+      "feature_id": "way/871997657",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    },
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3784553, 2.0897709]
+      },
+      "_id": "6226318e1dd149a77c27c105",
+      "properties": {
+        "@id": "way/779746729",
+        "leisure": "dog_park"
+      },
+      "type": "Feature",
+      "feature_id": "way/779746729",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    },
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3789242, 2.10087635]
+      },
+      "_id": "6226318f1dd149a77c27c187",
+      "properties": {
+        "@id": "way/872747044",
+        "leisure": "dog_park"
+      },
+      "type": "Feature",
+      "feature_id": "way/872747044",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    },
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3793953, 2.10672675]
+      },
+      "_id": "6226318f1dd149a77c27c22b",
+      "properties": {
+        "@id": "way/969257969",
+        "leisure": "dog_park",
+        "name": "àrea per a gossos"
+      },
+      "type": "Feature",
+      "feature_id": "way/969257969",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    },
+    {
+      "center_coord": {
+        "type": "Point",
+        "coordinates": [41.3712115, 2.0927000500000004]
+      },
+      "_id": "6226318f1dd149a77c27c185",
+      "properties": {
+        "@id": "way/872041541",
+        "leisure": "dog_park"
+      },
+      "type": "Feature",
+      "feature_id": "way/872041541",
+      "__v": 0,
+      "credits": "www.openstreetmap.org. The data is made available under ODbL."
+    }
+  ]
+}

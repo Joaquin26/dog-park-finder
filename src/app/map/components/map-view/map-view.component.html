@@ -1,0 +1,17 @@
+<google-map
+  #map
+  [center]="center"
+  [options]="options"
+  [zoom]="zoom"
+  height="100%"
+  width="100%"
+  (mapClick)="registerPark($event)"
+  (mapDragend)="changeCenter()"
+  ><map-marker
+    *ngFor="let park of parks"
+    [position]="{ lat: park.location.lat, lng: park.location.lng }"
+    [icon]="getIcon(park.id)"
+    (mapClick)="onMapClick(park)"
+  >
+  </map-marker
+></google-map>

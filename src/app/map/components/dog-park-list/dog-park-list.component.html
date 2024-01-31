@@ -1,0 +1,39 @@
+<div class="bg-gray-100 max-h-56 md:max-h-max md:h-full overflow-y-scroll border-r-2">
+  <h1 class="text-4xl py-4 px-8">Dog Parks</h1>
+  <div
+    *ngFor="let park of parks"
+    class="p-8 border-b-2 cursor-pointer flex"
+    [ngClass]="{
+      'bg-gray-200': isParkSelected(park)
+    }"
+    (click)="selectPark(park)"
+  >
+    <div class="flex-1 pr-4">
+      <input
+        type="text"
+        class="font-bold text-lg mb-2 w-full bg-transparent border-2"
+        [ngClass]="{
+          'border-black': isEditing(park),
+          'border-transparent': !isEditing(park)
+        }"
+        [(ngModel)]="park.name"
+        [disabled]="!isEditing(park)"
+      />
+      <p class="text-sm">Latitud: {{ park.location.lat }}</p>
+      <p class="text-sm">Longitud: {{ park.location.lng }}</p>
+    </div>
+    <div
+      *ngIf="!isEditing(park); else editing"
+      class="flex flex-col justify-between"
+    >
+      <img (click)="editPark(park)" src="assets/icons/edit-icon.png" />
+      <img (click)="deletePark(park)" src="assets/icons/delete-icon.png" />
+    </div>
+    <ng-template #editing>
+      <div class="flex flex-col justify-between">
+        <img (click)="savePark(park)" src="assets/icons/check-icon.png" />
+        <img (click)="cancelEdit()" src="assets/icons/close-icon.png" />
+      </div>
+    </ng-template>
+  </div>
+</div>
